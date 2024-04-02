@@ -1,8 +1,10 @@
 import { authMiddleware } from "@clerk/nextjs";
 
+// @ts-ignore
 export default authMiddleware({
   publicRoutes: ["/"],
-  debug: true
+  debug: true,
+  domain: "www.testpaca.com",
 });
 
 export const config = {
